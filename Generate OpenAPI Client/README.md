@@ -2,6 +2,12 @@
 
 - Command to generate open api client for dart
 
-```bash
-npm ci && npm run gen
-```
+    ```bash
+    npm ci && npm run gen
+    ```
+
+- Command to fix enum values
+
+    ```bash
+    cd dart; find . -name "\*\_enum.dart" -exec sed -i "" "s/data.toString()/data/g" {} \;
+    ```
